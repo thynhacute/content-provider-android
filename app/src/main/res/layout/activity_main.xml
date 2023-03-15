@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+
+    tools:context=".MainActivity">
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnAdd"
+        android:onClick="addProduct"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:background="#FA93DD"
+        android:gravity="center"
+        android:text="Add Card"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnDelete"
+        android:onClick="deleteProduct"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:background="#FA93DD"
+        android:text="Delete Car"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnUpdate"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:onClick="updateProduct"
+        android:background="#FA93DD"
+        android:text="Update Car"/>
+    <TextView
+        android:id="@+id/txtColumnName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="ID        Name          Price"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/txtData"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
